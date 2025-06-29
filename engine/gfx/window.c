@@ -56,3 +56,11 @@ void window_destroy(Window *window)
 bool window_shouldclose(Window *window)	{
 	return window->shouldClose;
 }
+
+bool window_grabstate_get(Window *window) {
+	return window->grabState;
+}
+
+void window_grabstate_switch(Window *window) {
+	window->grabState = !window->grabState;
+}
