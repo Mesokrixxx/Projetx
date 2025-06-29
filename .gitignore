@@ -1,0 +1,4 @@
+*.o
+*.a
+bin
+compile_flags.txt
